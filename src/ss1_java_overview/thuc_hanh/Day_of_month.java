@@ -36,7 +36,7 @@ public class Day_of_month {
                 break;
         }
         if (!datesInMonth.equals("")) {
-            System.out.print("The month '%d' has '%s' days", month, datesInMonth);
+            System.out.println("The month "+  month +" has "+ datesInMonth);
         }
     }
 }
