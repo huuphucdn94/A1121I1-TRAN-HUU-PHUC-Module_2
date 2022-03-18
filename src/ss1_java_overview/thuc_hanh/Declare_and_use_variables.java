@@ -11,6 +11,5 @@ public class Declare_and_use_variables {
         height = scanner.nextFloat();
         float area = wight * height;
         System.out.println("Area is: " + area);
-
     }
 }
