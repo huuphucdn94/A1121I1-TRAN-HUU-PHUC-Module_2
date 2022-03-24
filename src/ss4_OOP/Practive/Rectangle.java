@@ -8,7 +8,7 @@ public class Rectangle {
     //khai bao thuôc tính: <bổ từ truy cập modifier, nếu không có thì mặc định là mođifer của package> <kieu du lieu> < ten thuo tinh>
     double  width, height;
 
-    //Phương thức constructor khởi tao đối tượng Rectangle với các tham so truyền vào và gan gia tri cho cac thuoc tinh
+    //Phương thức constructor khởi tao đối tượng Rectangle mac dinh
     public Rectangle() {
     }
     public Rectangle (double width, double height){

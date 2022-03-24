@@ -2,52 +2,11 @@ package ss4_OOP.Exercise;
 
 import java.util.Scanner;
 
-public class QuadraticEquation {
-    private double a,b,c;
-    double delta;
-    double r1, r2;
-
-    public QuadraticEquation(double a, double b, double c) {
-        this.a = a;
-        this.b = b;
-        this.c = c;
-    }
-
-    public double getA() {
-        return a;
-    }
-
-    public void setA(double a) {
-        this.a = a;
-    }
-
-    public double getB() {
-        return b;
-    }
-
-    public void setB(double b) {
-        this.b = b;
-    }
-
-    public double getC() {
-        return c;
-    }
-
-    public void setC(double c) {
-        this.c = c;
-    }
-
-    public double getDiscriminant(){
-        return delta = b*b - 4*a*c;
-    }
-    public double getRoot1(){
-        return r1 = (-b + Math.pow(delta,0.5))/(2*a);
-    }
-    public double getRoot2(){
-        return r2 = (-b - Math.pow(delta,0.5))/(2*a);
-    }
-
+public class TestStopWatch {
     public static void main(String[] args) {
+        StopWatch stopWatch = new StopWatch();
+        stopWatch.start();
+        System.out.println(stopWatch.getStartTime());
         Scanner input = new Scanner(System.in);
         System.out.println("Nhap vao he so thư nhat (a): ");
         double a = input.nextDouble();
@@ -63,5 +22,9 @@ public class QuadraticEquation {
         } else {
             System.out.println(" The equation has two roots is:" + "\n" + quadraticEquation.getRoot1() + "\n" + quadraticEquation.getRoot2());
         }
+
+        stopWatch.stop();
+        System.out.println(stopWatch.getEndTime());
+        System.out.println(stopWatch.getElapsedTime());
     }
 }
