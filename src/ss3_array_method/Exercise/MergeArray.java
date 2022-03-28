@@ -5,7 +5,8 @@ import java.util.Scanner;
 
 public class MergeArray {
     public static void main(String[] args) {
-        int[]array1 = new int[5];
+        int[]array1;
+        array1 = new int[5];
         int [] array2 = new int[6];
         int[]array3 = new int[array1.length + array2.length];
         Scanner scanner = new Scanner(System.in);
