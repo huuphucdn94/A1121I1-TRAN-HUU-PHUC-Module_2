@@ -4,8 +4,8 @@ import java.io.*;
 import java.util.Scanner;
 
 public class CopyText {
-    static String fSource = "E:\\Codegym\Module 2\\src\\ss16_TextFile\\Exercise\\sourceFile.txt";
-    static String fTaget = "E:\\Codegym\Module 2\\src\\ss16_TextFile\\Exercise\\tagetFile.txt";
+    static String fSource = "E:\\Codegym\\Module 2\\src\\ss16_TextFile\\Exercise\\Exercise1\\source.txt";
+    static String fTarget = "E:\\Codegym\\Module 2\\src\\ss16_TextFile\\Exercise\\Exercise1\\target.txt";
 
     public static void CopyFile ( String pSource, String pTaget){
 
@@ -67,6 +67,6 @@ public class CopyText {
     }
     public static void main(String[] args) {
 
-        CopyFile( fSource,fTaget);
+        CopyFile( fSource,fTarget);
     }
 }
